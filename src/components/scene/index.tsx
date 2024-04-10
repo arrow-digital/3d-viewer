@@ -18,7 +18,7 @@ function setup(containerElement: HTMLElement) {
     1000
   );
 
-  scene.background = new THREE.Color('gray');
+  scene.background = new THREE.Color('black');
 
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(1500, 600);
@@ -33,19 +33,10 @@ function setup(containerElement: HTMLElement) {
   light2.position.set(0, 0, -10);
   scene.add(light2);
 
-  // renderer.setSize(window.innerWidth, window.innerHeight);
-  // const geometry = new THREE.BoxGeometry(1, 1, 1);
-  // const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-  // const cube = new THREE.Mesh(geometry, material);
-  // scene.add(cube);
-
   camera.position.z = 5;
 
   function animate() {
     requestAnimationFrame(animate);
-
-    // cube.rotation.x += 0.01;
-    // cube.rotation.y += 0.01;
 
     renderer.render(scene, camera);
   }
@@ -67,7 +58,6 @@ export function Scene() {
 
       scene.add(object);
 
-      // main();
       setup(containerRef.current!);
     });
   }, []);

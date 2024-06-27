@@ -50,6 +50,7 @@ async function readStreamToArrayBuffer(stream: ReadableStream) {
     if (value) {
       chunks.push(value);
     }
+
     done = streamDone;
   }
 
@@ -84,5 +85,5 @@ export function Scene() {
     start();
   }, [modelUrl]);
 
-  return <div ref={containerRef} />;
+  return <section ref={containerRef} />;
 }

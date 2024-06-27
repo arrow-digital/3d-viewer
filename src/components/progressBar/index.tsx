@@ -12,8 +12,8 @@ export function ProgressBar() {
   useEffect(() => {
     if (progress < 100) {
       const timer = setTimeout(() => {
-        setProgress((prevState) => prevState + 10);
-      }, 1000);
+        setProgress((prevState) => prevState + 5);
+      }, 1500);
 
       return () => clearTimeout(timer);
     }

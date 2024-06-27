@@ -13,7 +13,7 @@ export function ProgressBar() {
     if (progress < 100) {
       const timer = setTimeout(() => {
         setProgress((prevState) => prevState + 10);
-      }, 500);
+      }, 1000);
 
       return () => clearTimeout(timer);
     }

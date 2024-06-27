@@ -1,3 +1,4 @@
+'use client';
 import { ProgressBar } from '@/components/progressBar';
 import { Scene } from '@/components/scene';
 import { Suspense } from 'react';

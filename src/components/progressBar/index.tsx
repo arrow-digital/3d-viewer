@@ -23,7 +23,7 @@ export function ProgressBar() {
             <h1 className="text-4xl text-white font-bold">Carregando ...</h1>
             <Progress value={progress} />
 
-            <div className="hidden md:flex bg-white rounded-lg p-4 flex flex-col items-center gap-4">
+            <div className="hidden md:flex bg-white rounded-lg p-4 flex-col items-center gap-4">
               <h1 className="text-2xl text-black font-bold">
                 Use o mouse para navegar através do modelo
               </h1>

@@ -17,13 +17,13 @@ export function ProgressBar() {
 
   return (
     <>
-      {!loadingIsCompleted && (
+      {true && (
         <section className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="flex flex-col w-1/2 gap-4 items-center">
             <h1 className="text-4xl text-white font-bold">Carregando ...</h1>
             <Progress value={progress} />
 
-            <div className="bg-white rounded-lg p-4 flex flex-col items-center gap-4">
+            <div className="hidden md:flex bg-white rounded-lg p-4 flex flex-col items-center gap-4">
               <h1 className="text-2xl text-black font-bold">
                 Use o mouse para navegar através do modelo
               </h1>

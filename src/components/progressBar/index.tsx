@@ -17,7 +17,7 @@ export function ProgressBar() {
 
   return (
     <>
-      {true && (
+      {loadingIsCompleted && (
         <section className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="flex flex-col w-1/2 gap-4 items-center">
             <h1 className="text-xl text-white font-bold self-start">Carregando ...</h1>
